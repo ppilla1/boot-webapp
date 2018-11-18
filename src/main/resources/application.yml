@@ -1,0 +1,11 @@
+activeMq:
+  broker-url: tcp://localhost:61616
+
+logging:
+  pattern:
+    console: "%date{ISO8601} %-5level [%thread] [%C.%M]: %message%n"
+  level:
+      - ".=info"
+      - "net.f0error.bootwebapp=debug"
+      - "org.springframework=info"
+      - "org.springframework.jms=debug"
